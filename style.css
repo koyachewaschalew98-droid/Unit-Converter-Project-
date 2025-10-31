@@ -70,7 +70,7 @@ input[type="number"], select {
     margin-top: 5px;
 }
 
-/* የማስታወቂያ ቦታ - ገቢ ለማግኘት ወሳኝ ነው */
+
 .ad-placeholder {
     height: 90px; 
     background-color: #e6ffed; /* ለይተህ እንድታውቀው */
@@ -136,4 +136,54 @@ footer a:hover {
 .content-box p {
     line-height: 1.6;
     margin-bottom: 15px;
+}
+/* --- Media Queries for Responsive Design (Mobile Support) --- */
+
+@media (max-width: 600px) {
+    /* በትንንሽ ስክሪኖች ላይ ዋናውን ኮንቴይነር ለማጥበብ */
+    .converter-container {
+        width: 95%; /* ስፋቱን ከ400px ወደ 95% ቀይር */
+        padding: 15px;
+    }
+    
+    /* ለ Intro Text */
+    .intro-text {
+        padding: 15px;
+    }
+
+    /* የቅርጸ ቁምፊዎችን መጠን መቀነስ */
+    h1 {
+        font-size: 1.8em;
+    }
+
+    /* የመለኪያ ምርጫ ሳጥኖች */
+    .converter-section {
+        flex-direction: column; /* አቀማመጡን ቀጥ ያለ (column) አድርግ */
+    }
+
+    /* ለ Input እና Select ሳጥኖች */
+    .converter-section input, 
+    .converter-section select {
+        font-size: 1em;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    /* ለ Footer */
+    footer {
+        padding: 15px 10px;
+        font-size: 0.8em;
+        line-height: 1.8; /* ጽሑፎች እንዳይጠጋጉ መፍታት */
+    }
+
+    footer a {
+        display: block; /* Links እርስ በርስ እንዳይጠጋጉ */
+        margin: 5px 0;
+    }
+
+    /* ለ Privacy/About Us ገጾች */
+    .content-box {
+        padding: 15px;
+    }
 }
